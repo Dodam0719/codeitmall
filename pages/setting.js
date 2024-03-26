@@ -1,6 +1,6 @@
-import Dropdown from "@/components/Dropdown";
-import { useTheme } from "@/lib/ThemeContext";
-import styles from "@/styles/Setting.module.css";
+import Dropdown from '@/components/Dropdown';
+import { useTheme } from '@/lib/ThemeContext';
+import styles from '@/styles/Setting.module.css';
 
 export default function Setting() {
   const { theme, setTheme } = useTheme();
@@ -16,8 +16,8 @@ export default function Setting() {
           value={theme}
           onChange={(name, value) => setTheme(value)}
           options={[
-            { label: "라이트", value: "light" },
-            { label: "다크", value: "dark" },
+            { label: '라이트', value: 'light' },
+            { label: '다크', value: 'dark' },
           ]}
         />
       </section>

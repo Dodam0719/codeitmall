@@ -23,3 +23,7 @@ body.light,
 body.light a {
   color: #121212;
 }
+
+.container {
+  padding: 80px 0;
+}

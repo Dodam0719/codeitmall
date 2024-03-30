@@ -1,8 +1,8 @@
-import Image from 'next/image';
-import spinnerImg from '@/public/spinner.svg';
-import styles from './Spinner.module.css';
+import Image from "next/image";
+import spinnerImg from "@/public/spinner.svg";
+import styles from "./Spinner.module.css";
 
-export default function Spinner({ className = '' }) {
+export default function Spinner({ className = "" }) {
   return (
     <Image
       className={`${styles.spinner} ${className}`}

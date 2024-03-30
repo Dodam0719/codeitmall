@@ -1,8 +1,8 @@
-import { useRouter } from 'next/router';
-import { useState } from 'react';
-import styles from './SearchForm.module.css';
+import { useRouter } from "next/router";
+import { useState } from "react";
+import styles from "./SearchForm.module.css";
 
-export default function SearchForm({ initialValue = '' }) {
+export default function SearchForm({ initialValue = "" }) {
   const router = useRouter();
   const [value, setValue] = useState(initialValue);
 
@@ -13,7 +13,7 @@ export default function SearchForm({ initialValue = '' }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!value) {
-      router.push('/');
+      router.push("/");
       return;
     }
     router.push(`/search?q=${value}`);
